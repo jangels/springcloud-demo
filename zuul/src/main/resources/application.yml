@@ -7,8 +7,13 @@ server:
 spring:
   application:
     name: gateway
+##路由配置
+#  http://zuul_host:zuul_port/微服务 serviceId/**     ==> zuul_serviceId/**
+#  etc: ==> localhost:8763/client1/1/hi?name=lzh
 zuul:
   routes:
     api-a:
       serviceId: client1
-      path: /api-a/**
+      path: /api/**
+
+
