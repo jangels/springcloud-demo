@@ -9,6 +9,7 @@ eureka:
     eviction-interval-timer-in-ms: 60000
   instance:
     hostname: localhost
+    prefer-ip-address: true
   client:
   registerWithEureka: false
   fetchRegistry: false
